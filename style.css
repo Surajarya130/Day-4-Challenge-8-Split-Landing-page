@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+.container {
+  display: flex;
+}
+
+.container .xBox {
+  width: 50vw;
+  height: 100vh;
+  background-image: url('./images/xBox.jpg'),
+    linear-gradient(rgba(90, 30, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.container .sony {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/ps5.jfif'),
+    linear-gradient(rgba(90, 30, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: width 3 ease-in;
+}
+
+.sony:hover {
+  width: 75vw;
+}
+
+.xBox:hover {
+  width: 75vw;
+}
+
+.sonyBtn,
+.xBoxBtn {
+  padding: 22px 50px;
+  font-size: 22px;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.sonyBtn:hover {
+  background-color: green;
+  color: white;
+}
+
+.xBoxBtn:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.sony h1,
+.xBox h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.sony .left {
+  width: 75%;
+}
+
+.sony .right {
+  width: 25%;
+}
+
+.xBox .right {
+  width: 75%;
+}
+
+.xBox .left {
+  width: 25%;
+}
